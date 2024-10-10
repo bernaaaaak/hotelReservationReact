@@ -1,0 +1,206 @@
+/* HotelDetail.css */
+
+.hotel-booking {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comments p {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.guest-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.guest {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.guest:last-child {
+  margin-right: 0;
+}
+
+.guest label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.guest input {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.room-choice {
+  margin-bottom: 20px;
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.room {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.room:hover {
+  transform: translateY(-5px);
+}
+
+.room img {
+  width: 100%;
+  height: auto;
+}
+
+.room button {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #0A9CC0;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 4px 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.room button:hover {
+  background-color: #088ab1;
+}
+
+.accommodation-choice {
+  margin-bottom: 20px;
+}
+
+.accommodation-types {
+  display: grid;
+  gap: 10px;
+}
+
+.accommodation-types div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.accommodation-types div:hover {
+  background-color: #e0e0e0;
+}
+
+.accommodation-types input[type="radio"] {
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer button {
+  padding: 10px 20px;
+  background-color: #0A9CC0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+  background-color: #088ab1;
+}
+
+.payment-modal {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-modal h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.payment-form {
+  margin-bottom: 20px;
+}
+
+.payment-form input {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.payment-modal button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #0A9CC0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-modal button:hover {
+  background-color: #088ab1;
+}

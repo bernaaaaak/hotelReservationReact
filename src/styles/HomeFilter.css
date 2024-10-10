@@ -1,0 +1,102 @@
+/* HomeFilter.css */
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 1200px; /* Maksimum genişlik */
+  margin: 40px auto; /* Ortalamak için ve üstten boşluk eklemek için 40px margin */
+}
+
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.filter-input, .filter-select, .filter-multi-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.filter-select, .filter-multi-select {
+  width: 220px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.filter-button {
+  padding: 5px 10px; /* Butonları küçültmek için padding'i azaltın */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px; /* Font boyutunu küçültün */
+  width: 400px; /* Butonların genişliğini azaltın */
+}
+
+.filter-button-search {
+  background-color: #28a745; /* Search buttonu için yeşil */
+  color: white;
+}
+.filter-button-clear {
+  background-color: #f0ad4e; /* Clear Filters buttonu için sarı */
+  color: white;
+}
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: auto;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  padding: 5px 10px; /* Butonları küçültmek için padding'i azaltın */
+  background-color: #0CC0DF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px; /* Font boyutunu küçültün */
+  width: 100px; /* Butonların genişliğini azaltın */
+}
+
+.modal-content button:hover {
+  background-color: #0CC0DF;
+}

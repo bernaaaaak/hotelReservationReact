@@ -1,0 +1,153 @@
+/* UserPage.css */
+
+.user-page {
+  font-family: Arial, sans-serif;
+  width: 90%;
+  max-width: 1200px; /* Maksimum genişliği arttırdık */
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+header .info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header .info > div {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+header label {
+  display: block;
+  font-weight: bold;
+}
+
+header input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+header button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.slide-out {
+  transform: translateX(-100%);
+}
+
+.slide-in {
+  transform: translateX(0);
+}
+
+.reservations, .change-password {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+}
+
+.reservations h2, .change-password h2 {
+  margin-top: 0;
+}
+
+.reservation {
+  margin-bottom: 20px;
+}
+
+.reservation .details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservation img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.reservation .rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation .rating input {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reservation .rating button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reservation .rating button:hover {
+  background-color: #0056b3;
+}
+
+.change-password div {
+  margin-bottom: 10px;
+}
+
+.change-password label {
+  display: block;
+  font-weight: bold;
+}
+
+.change-password input {
+  width: calc(100% - 22px);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.change-password button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.change-password button:hover {
+  background-color: #0056b3;
+}

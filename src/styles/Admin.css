@@ -1,0 +1,58 @@
+form {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .MuiFormControl-root {
+    margin-bottom: 20px;
+  }
+  
+  .MuiButton-containedPrimary {
+    background-color: #007BFF;
+  }
+  
+  .MuiButton-containedPrimary:hover {
+    background-color: #0056b3;
+  }
+  
+  .MuiFormControlLabel-root {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .MuiSwitch-root {
+    margin-right: 10px;
+  }
+  
+  .MuiSelect-root {
+    min-width: 200px;
+  }
+  
+  .MuiInputBase-input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  @media (max-width: 600px) {
+    form {
+      padding: 10px;
+    }
+    
+    .MuiInputBase-input {
+      padding: 5px;
+    }
+  
+    .MuiFormControl-root {
+      margin-bottom: 15px;
+    }
+  }

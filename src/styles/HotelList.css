@@ -1,0 +1,98 @@
+/* HotelList.css */
+
+/* Genel ayarlar */
+.hotel-list {
+    display: flex;
+    flex-wrap: wrap; /* Kartların yan yana dizilmesini sağlar */
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Açık gri arka plan */
+    border-radius: 10px;
+    justify-content: center; /* Kartları ortalar */
+}
+
+.hotel-card {
+    flex: 1 1 calc(50% - 40px); /* Kartların genişliğini ayarlar ve aralarındaki boşluğu hesaba katar */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0; /* Açık sınır */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    transition: transform 0.2s, box-shadow 0.2s; /* Yumuşak geçiş */
+    background-color: white; /* Arka plan rengini beyaz yap */
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px); /* Hover'da hafif kaldırma */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover'da daha belirgin gölge */
+}
+
+.hotel-image {
+    margin-bottom: 20px; /* Görüntü altında boşluk */
+}
+
+.hotel-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Görüntünün alanı kaplamasını sağlama */
+}
+
+.hotel-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Kartların eşit yükseklikte olmasını sağlar */
+}
+
+.hotel-info h2 {
+    margin: 0 0 10px; /* Başlığın altındaki boşluk */
+    font-size: 1.5em;
+    color: #343a40; /* Daha koyu metin rengi */
+}
+
+.hotel-info p {
+    margin: 5px 0;
+    color: #6c757d; /* Orta gri metin rengi */
+}
+
+.hotel-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hotel-rating span {
+    background-color: #ffc107; /* Sarı arka plan */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hotel-reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hotel-reservation p {
+    margin: 5px 0;
+    color: #495057; /* Daha koyu gri metin rengi */
+}
+
+.hotel-reservation button {
+    padding: 10px 20px;
+    background-color: #0CC0DF; /* Mavi buton rengi */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s; /* Yumuşak geçiş */
+}
+
+.hotel-reservation button:hover {
+    background-color: #0A9CC0; /* Hover'da daha koyu mavi */
+    transform: scale(1.05); /* Hover'da hafif büyüme */
+}
